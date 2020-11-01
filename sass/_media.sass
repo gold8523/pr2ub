@@ -1,0 +1,376 @@
+@media ( max-width: 1200px )
+    .menu
+        &_item
+            padding-right: 25px
+        &_link
+            font-size: 13px    
+    .subheader
+        .phone
+            .number
+                text-align: right
+    .main_screen
+        &_header
+            font-size: 55px     
+    .footer
+        &_links
+            div
+                .social
+                    width: 140px
+                .pages
+                    width: 310px
+                    justify-content: space-between
+                    &_link
+                        font-size: 14px
+                        &_small
+                            margin: 7px
+                            font-size: 12px    
+                .stores
+                    flex-direction: column
+                    height: 90px          
+
+@media ( max-width: 991px )
+    .menu
+        &_item
+            padding-right: 10px  
+        &_link
+            font-size: 11px     
+    .subheader
+        .logo
+            &_img
+                width: 100%
+            &_text
+                font-size: 11px    
+        .phone
+            .call
+                font-size: 11px
+            .number
+                font-size: 18px
+        .call_btn
+            width: 100%
+            height: 40px
+            font-size: 12px        
+    
+    .main_screen
+        &_header
+            font-size: 40px
+        &_subheader
+            margin-top: 15px
+            font-size: 30px
+        &_text
+            font-size: 16px
+        .send
+            margin-top: 100px
+            width: 235px
+            height: 55px
+            font-size: 16px        
+    
+    .advantage
+        &_header
+            font-size: 35px
+        &_item
+            flex-direction: column
+            align-items: center
+            .advantage_icon
+                &_circle
+                    margin-right: 0
+            .advantage_description
+                margin-top: 10px                
+    .app
+        &_header
+            font-size: 35px
+        &_tagline
+            font-size: 14px    
+    .car
+        &_header
+            font-size: 35px
+        &_tagline
+            font-size: 14px
+        &_img
+            width: 90%    
+    .demands
+        &_header
+            font-size: 35px
+        &_item
+            &_header
+                font-size: 20px
+            &_list
+                li
+                    font-size: 15px
+            &_text
+                font-size: 15px
+    .cities
+        &_header
+            font-size: 35px
+        &_tagline
+            font-size: 14px 
+    .footer
+        &_links
+            div
+                .social
+                    width: 90px
+                    flex-wrap: wrap
+                    &_circle
+                        margin: 5px   
+                .pages
+                    width: 214px
+                    &_big
+                        flex-wrap: wrap
+                        &_link
+                            font-size: 13px
+                    &_small
+                        margin-top: 12px        
+                .stores
+                    flex-direction: column
+                    height: 90px
+
+@media ( max-width: 767px )
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: space-evenly
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0, 0, 0, 0.7)
+        transition: 0.8s all
+        &_active
+            left: 0
+        &_item
+            padding-right: 0
+            border: none
+        &_link
+            font-size: 20px 
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 20px
+        height: 20px
+        span
+            display: block
+            height: 2px
+            background-color: #fff  
+            margin-bottom: 4px
+            transition: 0.7s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: rotate(45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: rotate(-45deg)        
+    .sm_hidden
+        display: none
+    .md_hidden
+        display: block   
+    .subheader
+        .number
+            display: block
+            margin-top: 5px
+            font-size: 16px
+            font-weight: 400
+            text-align: center
+            color: #ffffff   
+        .call_btn
+            display: block
+            margin: 0 auto
+            margin-top: 3px
+            width: 155px
+            height: 40px
+            font-size: 12px       
+    .main_screen
+        &_header
+            font-size: 36px
+            line-height: 50px        
+    .advantage
+        &_header
+            font-size: 30px                
+    .app
+        &_header
+            font-size: 30px   
+    .car
+        &_header
+            font-size: 30px    
+    .demands
+        &_header
+            font-size: 30px
+    .cities
+        &_header
+            font-size: 30px
+    .footer
+        &_links
+            flex-direction: column
+            align-items: center  
+        &_links > div
+            width: 58%
+            margin-bottom: 25px
+            &:nth-child(3)
+                display: flex
+                justify-content: center
+            .social
+                width: 100%  
+            .pages
+                width: 100%
+                &_link
+                    font-size: 15px 
+            .stores
+                flex-direction: row 
+                height: 30px    
+        &_lang
+        margin-top: 0
+
+@media ( max-width: 575px )
+    nav
+        height: 30px
+        .menu
+            width: 80%     
+            &_link
+                font-size: 18px  
+    .subheader
+        height: 60px
+        top: 30px
+        .logo
+            margin-top: 17px
+            &_text   
+                display: none    
+        .number
+            margin-top: 6px
+            font-size: 12px
+        .call_btn
+            width: 110px
+            height: 22px
+            margin-top: 5px
+            font-size: 10px
+    .main_screen
+        min-height: 400px
+        padding: 90px 0 35px 0
+        &_header
+            margin-top: 53px
+            padding: 0 24px
+            font-size: 30px
+            line-height: 40px
+        &_subheader
+            margin-top: 32px
+            padding: 0 10px
+            font-size: 20px   
+            line-height: 30px       
+        &_text
+            display: none
+        .send
+            margin-top: 72px
+            width: 210px
+            height: 50px     
+            font-size: 16px
+    .advantage
+        &_plate
+            margin-top: 22px     
+        &_header
+            margin-top: 15px
+            font-size: 15px
+            line-height: 16px            
+        &_item
+            .advantage_icon
+                &_circle
+                    width: 100px
+                    height: 100px
+    .app
+        &_plate
+            margin-top: 22px                
+        &_header
+            margin-top: 15px
+            font-size: 15px  
+            line-height: 16px  
+        &_tagline
+            margin-top: 11px
+            font-size: 14px  
+        &_item
+            width: 290px
+            height: 254px      
+    .car
+        min-height: 390px
+        background: #000000
+        padding: 23px 0 33px 0
+        &_plate
+            margin-top: 0
+        &_header
+            display: none
+        &_tagline
+            display: none  
+        &_text
+            margin-top: 23px
+            font-size: 17px
+            color: #ffffff
+    .demands
+        padding: 25px 0
+        &_plate
+            margin-top: 0               
+        &_header
+            margin-top: 15px
+            font-size: 15px  
+            line-height: 16px        
+    .cities
+        min-height: 360px
+        padding: 25px 0 30px 0  
+        &_header
+            margin-top: 15px
+            font-size: 15px  
+            line-height: 16px  
+        &_tagline
+            margin-top: 11px
+            font-size: 14px
+        .all_cities
+            margin-top: 216px 
+    .footer
+        padding-bottom: 19px
+        &_line
+            margin-top: 25px
+            width: 253px
+        &_links
+            margin-top: 22px
+        &_links > div
+            width: 100%
+            margin-bottom: 0
+            &:nth-child(1)
+                order: 2
+            &:nth-child(2)
+                order: 1
+            &:nth-child(3)
+                display: block
+                order: 3
+            .social
+                width: 100%
+                justify-content: center 
+                margin-top: 20px
+            .pages
+                width: 100%
+                justify-content: space-around
+                &_big
+                    &_link
+                        font-size: 15px
+                &_small
+                    margin: 13px 20px 0 20px
+                    &_link
+                        font-size: 11px
+                        font-weight: 300
+                        text-align: left
+                        color: #999999
+                        text-transform: uppercase
+                &_lang
+                    margin-top: 13px  
+                    text-transform: uppercase      
+            .stores
+                flex-direction: row 
+                justify-content: space-between
+                height: 30px  
+                margin: 20px 14px 0 14px 
+                img
+                    width: 100% 
+        &_dark_line
+            display: none                 

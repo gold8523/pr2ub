@@ -1,0 +1,391 @@
+header
+    position: relative
+nav
+    height: 50px
+    background-color: #212121
+    padding: 13px 70px
+    position: fixed
+    width: 100%
+    z-index: 3
+.menu
+    display: flex
+    justify-content: space-between
+    list-style-type: none
+    margin-bottom: 0
+    &_item
+        border-right: 2px dotted black
+        padding-right: 35px
+    li
+        &:last-child
+                border-right: none    
+    &_link
+        font-size: 15px
+        font-weight: 300
+        color: #ffffff
+        &:hover
+            color: #ffffff
+.hamburger
+    display: none          
+.subheader
+    position: absolute
+    width: 100%
+    height: 84px
+    background-color: rgba(0, 0, 0, 0.6)
+    top: 50px
+    .logo
+        max-width: 100%
+        display: block
+        margin-top: 16px 
+    .logo_text
+        margin-top: 6px
+        font-size: 13px
+        font-weight: 100
+        text-align: left
+        color: rgba(255, 255, 255, 0.5)
+    .phone
+        max-width: 100%
+        .call
+            margin-top: 19px
+            font-size: 12px
+            font-weight: 300
+            text-align: right
+            color: #ffffff
+        .number
+            display: block
+            margin-top: 8px
+            font-size: 22px
+            text-align: center
+            line-height: 12px
+            color: #ffffff
+    .call_btn
+        margin-top: 19px
+        width: 172px
+        height: 46px
+        @include btn_style
+        font-size: 14px
+        text-transform: uppercase
+        text-align: center
+        color: #ffffff
+        &:hover
+            @include btn_hover      
+            
+.main_screen
+    min-height: 800px
+    background: url(../img/main_screen_bg.jpg) center center/cover no-repeat
+    padding: 150px 0 135px 0
+    &_header
+        margin: 0
+        font-size: 60px
+        font-weight: 900
+        text-align: center
+        color: #ffffff
+        line-height: 60px
+    &_subheader
+        margin: 0
+        margin-top: 22px
+        font-size: 36px
+        font-weight: 700
+        text-align: center
+        color: #ffffff
+        line-height: 36px
+    &_text
+        margin-top: 23px
+        font-size: 18px
+        font-weight: 400
+        text-align: center
+        color: #ffffff
+    .send
+        display: block
+        margin: 118px auto 0 auto
+        width: 259px
+        height: 63px
+        @include btn_style
+        font-size: 18px
+        text-align: center
+        color: #ffffff
+        &:hover
+            @include btn_hover
+.advantage
+    min-height: 900px
+    &_plate
+        @include plate
+        margin-top: 71px
+        background-color: #000000
+        color: #ffffff
+    &_header
+        @include section_title
+        margin: 38px 0 40px 0
+    &_item
+        display: flex
+        justify-content: space-around
+        margin-bottom: 35px
+        .advantage_icon
+            &_circle
+                width: 113px
+                height: 113px
+                margin: 10px 26px 0 0
+                background-color: $primary_color
+                border-radius: 50%
+                display: flex
+                justify-content: center
+                align-items: center
+        &_header
+            color: $primary_color
+            font-size: 17px
+            font-weight: 300
+        &_text
+            font-size: 15px
+            font-weight: 300
+            text-align: justify
+            color: #202020    
+.app
+    min-height: 864px
+    background: url(../img/app_bg.jpg) center center/cover no-repeat
+    padding: 48px 0 79px 0
+    &_plate
+        @include plate
+        background-color: #000000
+        color: #ffffff
+    &_header
+        @include section_title
+        margin: 38px 0 0 0
+    &_tagline
+        margin-top: 19px
+        font-size: 17px
+        font-weight: 300
+        text-align: center
+        color: #222222 
+        line-height: 15px
+    .row
+        margin-top: 32px    
+    &_item
+        width: 320px
+        height: 280px
+        margin: 0 auto 
+        margin-bottom: 19px
+        padding-top: 92px
+        position: relative
+        &_header
+            font-size: 24px
+            font-weight: 300
+            text-align: center
+            color: #ffffff
+            text-transform: uppercase
+        &_more
+            width: 26px
+            height: 26px
+            background-color: #000000
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            bottom: 35px
+            left: 50%
+            transform: translateX(-50%)
+            cursor: pointer
+            &::before
+                content: ''
+                display: block
+                width: 14px
+                height: 2px
+                background-color: $primary_color
+            &::after
+                content: ''
+                display: block
+                position: absolute
+                width: 2px
+                height: 14px
+                background-color: $primary_color
+                left: 50%
+                transform: translateX(-50%)
+        &_1
+            background: url(../img/app_img1.png) center center/cover no-repeat
+        &_2
+            background: url(../img/app_img2.png) center center/cover no-repeat    
+        &_3
+            background: url(../img/app_img3.png) center center/cover no-repeat
+        &_4
+            background: url(../img/app_img4.png) center center/cover no-repeat
+        &_5
+            background: url(../img/app_img5.png) center center/cover no-repeat
+        &_6
+            background: url(../img/app_img6.png) center center/cover no-repeat
+.car
+    min-height: 895px
+    background: url(../img/car_bg.jpg) center center/cover no-repeat
+    padding: 56px 0 138px 0
+    &_plate
+        @include plate
+        margin-top: 56px
+        background-color: #ffffff
+        color: #000000
+    &_header
+        @include section_title
+        margin-top: 32px
+        color: #ffffff
+    &_tagline
+        margin-top: 19px
+        font-size: 17px
+        font-weight: 300
+        text-align: center
+        color: #ffffff    
+    &_img
+        display: block
+        margin: 56px auto 4px auto
+    &_text
+        font-size: 17px
+        font-weight: 300
+        text-align: center
+        color: #222222    
+.demands
+    min-height: 919px
+    padding: 68px 0 84px 0
+    &_plate
+        @include plate
+        background-color: #000000
+        color: #ffffff
+    &_header
+        @include section_title
+        margin-top: 33px    
+    &_item
+        margin-top: 33px
+        &_red
+            margin-top: 62px
+        &_header
+            font-size: 22px
+            font-weight: 400
+            color: $primary_color
+            text-transform: uppercase
+            span
+                font-size: 17px
+                font-weight: 400
+                text-transform: none
+            &_red
+                color: $red_color        
+        &_list
+            padding-left: 50px    
+            list-style: none 
+            margin-top: 22px  
+            li
+                position: relative
+                font-size: 17px
+                font-weight: 300
+                text-align: left
+                color: #222222 
+                margin-bottom: 10px
+                &::before
+                    content: ''
+                    display: block
+                    position: absolute
+                    left: -32px
+                    top: 3px
+                    width: 21px
+                    height: 20px
+                    background: url('../icons/demands_icon.png') center center/cover no-repeat        
+            &_red
+                li
+                    &::before
+                        background: url('../icons/demands_icon_red.png') center center/cover no-repeat
+        &_text
+            color: $primary_color  
+.cities
+    min-height: 717px
+    padding: 49px 0
+    background: url('../img/cities_bg.jpg') center center/cover no-repeat
+    &_plate
+        @include plate
+        background-color: #ffffff  
+        color: #000000
+    &_header
+        @include section_title
+        margin-top: 32px
+        color: #ffffff
+    &_tagline
+        margin-top: 20px
+        font-size: 17px
+        font-weight: 300
+        text-align: center
+        color: #ffffff   
+    .all_cities
+        display: block
+        margin-top: 486px
+        font-size: 15px
+        font-weight: 300
+        text-align: center
+        color: #1fbad6       
+        text-transform: uppercase  
+.footer
+    min-height: 156px
+    &_line
+        margin: 14px auto 0 auto
+        width: 299px
+        height: 4px
+        background-color: #1fbad6
+    &_links
+        display: flex
+        justify-content: space-between
+        align-items: flex-start   
+        margin: 0 23px
+        padding-top: 33px
+    &_links > div
+        width: 33%
+        &:nth-child(3)
+            display: flex
+            justify-content: flex-end
+            
+        .social
+            width: 153px
+            display: flex
+            justify-content: space-between
+            &_circle     
+                width: 32px
+                height: 32px
+                display: flex
+                justify-content: center
+                align-items: center
+                border-radius: 50%
+                background-color: #070716
+                cursor: pointer
+                i
+                    color: #ffffff
+        .pages
+            width: 380px
+            margin: 0 auto
+            &_big
+                display: flex
+                justify-content: space-around
+                &_link
+                    font-size: 15px
+                    font-weight: 300
+                    text-align: left
+                    color: #070716
+                    text-transform: uppercase
+            &_small
+                display: flex
+                justify-content: space-between
+                flex-wrap: wrap
+                margin-top: 18px
+                &_link
+                    font-size: 11px
+                    font-weight: 300
+                    text-align: left
+                    color: #999999
+                    text-transform: uppercase
+            &_lang
+                margin-top: 19px
+                font-size: 11px
+                font-weight: 300
+                text-align: center
+                color: #1fbad6
+                cursor: pointer        
+        .stores
+            display: flex
+            justify-content: space-between        
+    &_dark_line
+        margin-top: 31px
+        width: 100%
+        height: 8px
+        background-color: #070716
+.md_hidden
+        display: none

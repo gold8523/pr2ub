@@ -1,0 +1,30 @@
+@mixin plate
+    width: 112px
+    height: 25px
+    display: block
+    margin: 0 auto 0 auto
+    padding-top: 4px
+    font-size: 11px
+    font-weight: 100
+    text-align: center
+    text-transform: uppercase
+
+@mixin section_title
+    font-family: Roboto
+    font-size: 38px
+    font-weight: 700
+    text-align: center
+    color: #222222
+    text-transform: uppercase
+    line-height: 30px
+
+@mixin btn_style
+    box-shadow: inset 0px -3px 0 0 rgba(0, 0, 0, 0.12)
+    border: none
+    border-radius: 4px
+    background-image: linear-gradient(to top, #1eacc7, #4ce2ff)
+    text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21)   
+
+@mixin btn_hover
+    background-image: none
+    background-color: $primary_color
